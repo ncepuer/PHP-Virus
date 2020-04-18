@@ -22,7 +22,7 @@ include('function.php');
     color:['#008000','#FF8C00','#DC143C','#FFF'],
     title: {
         text: '病毒感染传播演示效果 |【第<?php echo startSet($_GET['day'],$_GET['yisi'],$_GET['quezhen'])['day'] ?>天】',
-        subtext: '本样本数据由程序随机生成，请勿类比到真实情况当中！\n\n当前：\n健康人数：<?php echo startSet($_GET['day'],$_GET['yisi'],$_GET['quezhen'])['people']; ?>人\n疑似人数：<?php echo startSet($_GET['day'],$_GET['yisi'],$_GET['quezhen'])['yisi']; ?>人\n确诊人数：<?php echo startSet($_GET['day'],$_GET['yisi'],$_GET['quezhen'])['quezhen']; ?>人\n医疗队伍：<?php echo startSet($_GET['day'],$_GET['yisi'],$_GET['quezhen'])['h_num']; ?>人\n\n开发作者：clark',
+        subtext: '本样本数据由程序随机生成，请勿类比到真实情况当中！\n\n当前：\n健康人数：<?php echo startSet($_GET['day'],$_GET['yisi'],$_GET['quezhen'])['people']; ?>人\n疑似人数：<?php echo startSet($_GET['day'],$_GET['yisi'],$_GET['quezhen'])['yisi']; ?>人\n确诊人数：<?php echo startSet($_GET['day'],$_GET['yisi'],$_GET['quezhen'])['quezhen']; ?>人\n医疗队伍：<?php echo startSet($_GET['day'],$_GET['yisi'],$_GET['quezhen'])['h_num']; ?>人\n\n开发作者：\n杜若聪、刘云龙、袁一辰\n\nLinux课程设计',
     },
     grid: {
         left: '10%',
@@ -89,7 +89,7 @@ include('function.php');
                 text: '源码及介绍',
                 icon:'image://img/code.png', 
                 onclick:function(o){
-                    window.location.href="https://gitee.com/dongyao/virus";
+                    window.open("https://github.com/ncepuer/PHP-Virus");
                 }    
             },
         }
